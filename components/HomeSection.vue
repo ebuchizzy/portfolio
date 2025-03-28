@@ -1,0 +1,106 @@
+<template>
+  <section id="main" class="relative flex items-center w-full h-screen bg-dark px-4 sm:px-6 md:px-12 lg:px-48 overflow-hidden">
+  
+    <div class="absolute right-0 top-0 w-full h-full z-10 pointer-events-none">
+      <iframe 
+        src='https://my.spline.design/stacks-e989627480f95227000b407a92305c48/' 
+        frameborder='0' 
+        class="w-full h-full"
+        title="Chukwuebuka's 3D Background">
+      </iframe>                 
+    </div>
+    
+   
+      
+    
+    <div class="relative z-10 max-w-lg">
+      <h2 class="text-white text-xl sm:text-2xl md:text-3xl font-medium" data-aos="fade-right" data-aos-delay="800">
+        Hello, I'm <br><span class="text-3xl sm:text-4xl md:text-6xl font-semibold">Chukwuebuka Akpuofoba</span>
+      </h2>
+      
+  
+      
+      <div class="relative h-12 sm:h-16 overflow-hidden mt-2" data-aos="fade-left" data-aos-delay="900">
+        <transition-group name="slide-fade" class="animated-text">
+          <h3 :key="currentText"
+              class="text-2xl sm:text-3xl md:text-5xl font-bold text-primary absolute">
+            {{ currentText }}
+          </h3>
+        </transition-group>
+      </div>
+      
+      <NuxtLink to="#work" 
+         class="inline-block mt-6 sm:mt-8 px-4 sm:px-6 py-2 sm:py-3 bg-primary text-white uppercase text-sm sm:text-base font-semibold tracking-wider rounded transition-colors duration-500 hover:bg-blue-600" 
+         data-aos="zoom-out" data-aos-delay="1000">
+        See My Work
+      </NuxtLink>
+      
+      <div class="mt-8 sm:mt-12 flex" data-aos="fade-in" data-aos-delay="1200">
+        <a v-for="(icon, index) in socialIcons" :key="index" 
+           :href="icon.link" 
+           class="text-white text-xl sm:text-2xl mr-4 sm:mr-6 hover:text-primary transition-colors duration-300"
+           :data-aos="'fade-in'"
+           :data-aos-delay="1200 + (index * 100)">
+          <i :class="icon.class"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+</template>
+  
+<script setup>
+import { ref, onMounted, onUnmounted, computed } from 'vue';
+
+
+const animatedTexts = [
+  'Web Developer',
+  'Web Designer',
+  'Graphic Designer',
+  'Programmer',
+  'Digital Marketer',
+  'Sales Executive'
+];
+
+const socialIcons = [
+  { class: 'fab fa-facebook-f', link: '#' },
+  { class: 'fab fa-instagram', link: '#' },
+  { class: 'fab fa-behance', link: 'https://www.behance.net/ebukaakpuofoba'},
+  { class: 'fab fa-github', link: 'https://github.com/ebuchizzy?tab=repositories' }
+];
+
+const currentTextIndex = ref(0);
+const currentText = computed(() => animatedTexts[currentTextIndex.value]);
+let interval = null;
+
+onMounted(() => {
+  interval = setInterval(() => {
+    currentTextIndex.value = (currentTextIndex.value + 1) % animatedTexts.length;
+  }, 3000);
+});
+
+onUnmounted(() => {
+  clearInterval(interval);
+});
+</script>
+  
+<style scoped>
+.slide-fade-enter-active {
+  transition: all 0.3s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.3s ease;
+}
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+
+@media (max-width: 768px) {
+  .absolute.right-0 {
+    width: 100%;
+    opacity: 0.5; 
+  }
+}
+</style>
