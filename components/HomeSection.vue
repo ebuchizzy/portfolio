@@ -1,45 +1,39 @@
 <template>
-  <section id="main" class="relative flex items-center w-full h-screen bg-dark px-4 sm:px-6 md:px-12 lg:px-48 overflow-hidden">
-  
+  <section id="main" class="relative flex items-center justify-center w-full h-screen bg-dark px-4 sm:px-6 md:px-12 lg:px-48 overflow-hidden">
     
-    
-    <div class="absolute right-0 top-0 w-full h-full z-10 pointer-events-none">
+    <!-- <div class="absolute right-0 top-0 w-full h-full z-10 pointer-events-none">
       <iframe 
         src='https://my.spline.design/stacks-e989627480f95227000b407a92305c48/' 
         frameborder='0' 
         class="three-d w-full h-full"
         title="Chukwuebuka's 3D Background">
       </iframe>
-    </div>
+    </div> -->
     
-    
-    
-    <div class="relative z-10 max-w-lg">
-      <h2 class="text-white text-xl sm:text-2xl md:text-3xl font-medium" data-aos="fade-right" data-aos-delay="800">
-        Hello, I'm <br><span class="text-3xl sm:text-4xl md:text-5xl font-semibold">Chukwuebuka Akpuofoba</span>
+    <div class="relative z-10 text-center max-w-4xl">
+      <h2 class="text-white text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-medium" data-aos="fade-right" data-aos-delay="800">
+        Hello, I'm <br><span class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold">Chukwuebuka Akpuofoba</span>
       </h2>
       
-  
-      
-      <div class="relative h-10 sm:h-16 overflow-hidden mt-2" data-aos="fade-left" data-aos-delay="900">
+      <div class="relative h-16 sm:h-28 md:h-36 overflow-hidden mt-4" data-aos="fade-left" data-aos-delay="900">
         <transition-group name="slide-fade" class="animated-text">
           <h3 :key="currentText"
-              class="text-2xl sm:text-3xl md:text-5xl font-bold text-primary absolute">
+              class="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold text-primary absolute left-1/2 transform -translate-x-1/2">
             {{ currentText }}
           </h3>
         </transition-group>
       </div>
       
       <NuxtLink to="#work" 
-         class="inline-block mt-6 sm:mt-8 px-4 sm:px-6 py-2 sm:py-3 bg-primary text-white uppercase text-sm sm:text-base font-semibold tracking-wider rounded transition-colors duration-500 hover:bg-blue-600" 
+         class="inline-block mt-8 sm:mt-10 px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white uppercase text-base sm:text-lg font-semibold tracking-wider rounded transition-colors duration-500 hover:bg-blue-600" 
          data-aos="zoom-out" data-aos-delay="1000">
         See My Work
       </NuxtLink>
       
-      <div class="mt-8 sm:mt-12 flex" data-aos="fade-in" data-aos-delay="1200">
+      <div class="mt-10 sm:mt-14 flex justify-center" data-aos="fade-in" data-aos-delay="1200">
         <a v-for="(icon, index) in socialIcons" :key="index" 
            :href="icon.link" 
-           class="text-white text-xl sm:text-2xl mr-4 sm:mr-6 hover:text-primary transition-colors duration-300"
+           class="text-white text-2xl sm:text-3xl mr-6 sm:mr-8 hover:text-primary transition-colors duration-300"
            :data-aos="'fade-in'"
            :data-aos-delay="1200 + (index * 100)">
           <i :class="icon.class"></i>
