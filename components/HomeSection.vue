@@ -1,18 +1,13 @@
 <template>
   <section id="main" class="relative flex items-center justify-center w-full h-screen bg-dark px-4 sm:px-6 md:px-12 lg:px-48 overflow-hidden">
     
-    <!-- <div class="absolute right-0 top-0 w-full h-full z-10 pointer-events-none">
-      <iframe 
-        src='https://my.spline.design/stacks-e989627480f95227000b407a92305c48/' 
-        frameborder='0' 
-        class="three-d w-full h-full"
-        title="Chukwuebuka's 3D Background">
-      </iframe>
-    </div> -->
-    
     <div class="relative z-10 text-center max-w-4xl">
       <h2 class="text-white text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-medium" data-aos="fade-right" data-aos-delay="800">
-        Hello, I'm <br><span class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold">Chukwuebuka Akpuofoba</span>
+        Hello, I'm <br>
+        <span class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold">
+          <span>{{ typedText }}</span>
+          <span class="typing-cursor">|</span>
+        </span>
       </h2>
       
       <div class="relative h-24 sm:h-28 md:h-36 overflow-hidden mt-4" data-aos="fade-left" data-aos-delay="900">
@@ -46,6 +41,10 @@
 <script setup>
 import { ref, onMounted, onUnmounted, computed } from 'vue';
 
+const fullName = "Chukwuebuka Akpuofoba";
+const typedText = ref('');
+const typingComplete = ref(false);
+let typingTimer = null;
 
 const animatedTexts = [
   'Web Developer',
@@ -57,23 +56,45 @@ const animatedTexts = [
 ];
 
 const socialIcons = [
- 
   { class: 'fab fa-behance', link: 'https://www.behance.net/ebukaakpuofoba'},
   { class: 'fab fa-github', link: 'https://github.com/ebuchizzy?tab=repositories' }
 ];
 
 const currentTextIndex = ref(0);
 const currentText = computed(() => animatedTexts[currentTextIndex.value]);
-let interval = null;
+let textRotationInterval = null;
 
-onMounted(() => {
-  interval = setInterval(() => {
+const startTypingAnimation = () => {
+  let currentIndex = 0;
+  typingTimer = setInterval(() => {
+    if (currentIndex < fullName.length) {
+      typedText.value += fullName.charAt(currentIndex);
+      currentIndex++;
+    } else {
+      clearInterval(typingTimer);
+      typingComplete.value = true;
+      
+      // Start the role text rotation after name typing is complete
+      startTextRotation();
+    }
+  }, 100); // Adjust speed of typing here (milliseconds)
+};
+
+const startTextRotation = () => {
+  textRotationInterval = setInterval(() => {
     currentTextIndex.value = (currentTextIndex.value + 1) % animatedTexts.length;
   }, 3000);
+};
+
+onMounted(() => {
+  // Start typing animation when component mounts
+  startTypingAnimation();
 });
 
 onUnmounted(() => {
-  clearInterval(interval);
+  // Clean up intervals when component unmounts
+  if (typingTimer) clearInterval(typingTimer);
+  if (textRotationInterval) clearInterval(textRotationInterval);
 });
 </script>
   
@@ -90,6 +111,14 @@ onUnmounted(() => {
   opacity: 0;
 }
 
+.typing-cursor {
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
 
 @media (max-width: 1300px) {
   .three-d {
@@ -99,15 +128,11 @@ onUnmounted(() => {
   }
 }
 
-
 @media (max-width: 768px) {
-
   .three-d {
     scale: 0.5;
     top:-50%;
     right: -20;
-    
   }
-
 }
 </style>
