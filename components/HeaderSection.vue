@@ -24,8 +24,10 @@
    
     
     <nav :class="[
-      'lg:flex lg:items-center transition-all duration-300',
-      isMenuOpen ? 'fixed top-0 right-0 h-full w-48 sm:w-64 bg-white flex flex-col justify-center items-center shadow-lg z-50' : 'hidden lg:block'
+       'transition-all duration-300',
+  isMenuOpen 
+    ? 'fixed top-0 right-0 w-64 h-screen bg-white flex flex-col justify-center items-center shadow-lg z-50 overflow-y-auto' 
+    : 'hidden lg:flex lg:items-center lg:relative'
     ]">
       <button v-if="isMenuOpen"
               @click="toggleMenu"
@@ -63,6 +65,11 @@ const navLinks = [
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
+  if (isMenuOpen.value) {
+    document.body.classList.add('overflow-hidden');
+  } else {
+    document.body.classList.remove('overflow-hidden');
+  }
 };
 
 const handleScroll = () => {

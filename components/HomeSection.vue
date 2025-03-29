@@ -1,26 +1,27 @@
 <template>
   <section id="main" class="relative flex items-center w-full h-screen bg-dark px-4 sm:px-6 md:px-12 lg:px-48 overflow-hidden">
   
+    
+    
     <div class="absolute right-0 top-0 w-full h-full z-10 pointer-events-none">
       <iframe 
         src='https://my.spline.design/stacks-e989627480f95227000b407a92305c48/' 
         frameborder='0' 
-        class="w-full h-full"
+        class="three-d w-full h-full"
         title="Chukwuebuka's 3D Background">
-      </iframe>                 
+      </iframe>
     </div>
     
-   
-      
+    
     
     <div class="relative z-10 max-w-lg">
       <h2 class="text-white text-xl sm:text-2xl md:text-3xl font-medium" data-aos="fade-right" data-aos-delay="800">
-        Hello, I'm <br><span class="text-3xl sm:text-4xl md:text-6xl font-semibold">Chukwuebuka Akpuofoba</span>
+        Hello, I'm <br><span class="text-3xl sm:text-4xl md:text-5xl font-semibold">Chukwuebuka Akpuofoba</span>
       </h2>
       
   
       
-      <div class="relative h-12 sm:h-16 overflow-hidden mt-2" data-aos="fade-left" data-aos-delay="900">
+      <div class="relative h-10 sm:h-16 overflow-hidden mt-2" data-aos="fade-left" data-aos-delay="900">
         <transition-group name="slide-fade" class="animated-text">
           <h3 :key="currentText"
               class="text-2xl sm:text-3xl md:text-5xl font-bold text-primary absolute">
@@ -62,8 +63,7 @@ const animatedTexts = [
 ];
 
 const socialIcons = [
-  { class: 'fab fa-facebook-f', link: '#' },
-  { class: 'fab fa-instagram', link: '#' },
+ 
   { class: 'fab fa-behance', link: 'https://www.behance.net/ebukaakpuofoba'},
   { class: 'fab fa-github', link: 'https://github.com/ebuchizzy?tab=repositories' }
 ];
@@ -97,10 +97,23 @@ onUnmounted(() => {
 }
 
 
-@media (max-width: 768px) {
-  .absolute.right-0 {
-    width: 100%;
-    opacity: 0.5; 
+@media (max-width: 1300px) {
+  .three-d {
+    scale: 0.7;
+    top: 0%;
+    right: -20%;
   }
+}
+
+
+@media (max-width: 768px) {
+
+  .three-d {
+    scale: 0.5;
+    top:-50%;
+    right: -20;
+    
+  }
+
 }
 </style>
