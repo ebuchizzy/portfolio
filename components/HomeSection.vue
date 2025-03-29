@@ -15,7 +15,7 @@
         Hello, I'm <br><span class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold">Chukwuebuka Akpuofoba</span>
       </h2>
       
-      <div class="relative h-16 sm:h-28 md:h-36 overflow-hidden mt-4" data-aos="fade-left" data-aos-delay="900">
+      <div class="relative h-24 sm:h-28 md:h-36 overflow-hidden mt-4" data-aos="fade-left" data-aos-delay="900">
         <transition-group name="slide-fade" class="animated-text">
           <h3 :key="currentText"
               class="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold text-primary absolute left-1/2 transform -translate-x-1/2">
@@ -25,7 +25,7 @@
       </div>
       
       <NuxtLink to="#work" 
-         class="inline-block mt-8 sm:mt-10 px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white uppercase text-base sm:text-lg font-semibold tracking-wider rounded transition-colors duration-500 hover:bg-blue-600" 
+         class="inline-block mt-8 sm:mt-10 px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white uppercase text-base sm:text-lg font-semibold tracking-wider rounded-2xl transition-colors duration-500 hover:bg-blue-600" 
          data-aos="zoom-out" data-aos-delay="1000">
         See My Work
       </NuxtLink>

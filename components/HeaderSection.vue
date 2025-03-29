@@ -35,15 +35,16 @@
         <i class="fas fa-times text-xl sm:text-2xl"></i>
       </button>
       
-      <NuxtLink v-for="(link, index) in navLinks" :key="index"
-               :to="link.to"
-               :class="[
-                 'font-medium mx-2 sm:mx-3 text-sm sm:text-base transition-colors duration-300',
-                 isMenuOpen ? 'text-black my-2 sm:my-3 py-1.5 sm:py-2 px-4 sm:px-6 hover:bg-primary hover:text-white'
-                 : `text-white ${isSticky ? 'hover:text-black' : 'hover:text-primary'}`,
-               ]">
+      <a v-for="(link, index) in navLinks" :key="index"
+         :href="link.to"
+         @click="handleLinkClick"
+         :class="[
+           'font-medium mx-2 sm:mx-3 text-sm sm:text-base transition-colors duration-300',
+           isMenuOpen ? 'text-black my-2 sm:my-3 py-1.5 sm:py-2 px-4 sm:px-6 hover:bg-primary hover:text-white'
+           : `text-white ${isSticky ? 'hover:text-black' : 'hover:text-primary'}`,
+         ]">
         {{ link.text }}
-      </NuxtLink>
+      </a>
     </nav>
   </header>
 </template>
@@ -62,6 +63,11 @@ const navLinks = [
   { text: 'Work', to: '#work' },
   { text: 'Contact', to: '#contact' }
 ];
+
+const handleLinkClick = () => {
+  isMenuOpen.value = false;
+  document.body.classList.remove('overflow-hidden');
+};
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
