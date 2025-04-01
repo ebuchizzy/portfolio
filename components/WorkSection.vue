@@ -2,7 +2,7 @@
     <section id="work" class="py-24 px-4 sm:px-6 md:px-12 lg:px-48 bg-dark">
       <div class="w-full flex justify-center items-center flex-col mb-8 sm:mb-16">
         <h2 class="text-primary text-2xl sm:text-4xl font-bold relative pb-8 text-center" data-aos="fade-up">
-          My Work
+          My Works
           <span class="absolute w-24 sm:w-36 h-1 bg-primary bottom-4 left-1/2 transform -translate-x-1/2"></span>
           <span class="absolute w-3 h-3 bg-primary rounded-full bottom-3 left-1/2 transform -translate-x-1/2"></span>
         </h2>

@@ -22,7 +22,7 @@
       <NuxtLink to="#work" 
          class="inline-block mt-8 sm:mt-10 px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white uppercase text-base sm:text-lg font-semibold tracking-wider rounded-2xl transition-colors duration-500 hover:bg-blue-600" 
          data-aos="zoom-out" data-aos-delay="1000">
-        See My Work
+        See My Works
       </NuxtLink>
       
       <div class="mt-10 sm:mt-14 flex justify-center" data-aos="fade-in" data-aos-delay="1200">
