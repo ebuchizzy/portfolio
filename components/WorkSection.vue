@@ -13,8 +13,10 @@
              class="w-full min-[280px]:w-64 sm:w-80 mx-2 sm:mx-4 mb-4 sm:mb-6 overflow-hidden rounded-lg"
              :data-aos="work.animation" :data-aos-delay="work.delay">
           <div class="relative w-full h-48 sm:h-64 overflow-hidden">
-            <img :src="work.image" :alt="'Project ' + (index + 1)" 
-                 class="absolute top-0 left-0 w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+            <a :href="work.link" target="_blank">
+              <img :src="work.image" :alt="'Project ' + (index + 1)" 
+                   class="absolute top-0 left-0 w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+            </a>
           </div>
         </div>
       </div>
@@ -28,14 +30,16 @@
   import image4 from '@/assets/Image/Desktop - 14.png'
   import image5 from '@/assets/Image/SupportUsPage.png'
   import image6 from '@/assets/Image/Desktop - 111.png'
+  import image7 from "@/assets/Image/Desk - saint.png"
 
 
   const works = [
-    { image: image1, animation: 'fade-right', delay: '200' },
-    { image: image2, animation: 'fade-up', delay: '200' },
-    { image: image3, animation: 'fade-left', delay: '200' },
-    { image: image4, animation: 'fade-right', delay: '400' },
-    { image: image5, animation: 'fade-up', delay: '400' },
-    { image: image6, animation: 'fade-left', delay: '400' }
+    { image: image1, animation: 'fade-right', delay: '200', link: 'https://www.behance.net/gallery/220607569/JSPARKS-branding' },
+    { image: image2, animation: 'fade-up', delay: '200', link: 'https://www.behance.net/gallery/220607569/JSPARKS-branding' },
+    { image: image3, animation: 'fade-left', delay: '200', link: 'https://www.behance.net/gallery/217027223/Lanraj-Product-Design' },
+    { image: image4, animation: 'fade-right', delay: '400', link: 'https://www.behance.net/gallery/217018213/Car-Flyer-Design-with-Figma' },
+    { image: image5, animation: 'fade-up', delay: '400', link: 'https://www.behance.net/gallery/221056145/SupportPage-Design-and-Dev' },
+    { image: image6, animation: 'fade-left', delay: '400', link: 'https://www.behance.net/gallery/217018213/Car-Flyer-Design-with-Figma' },
+    { image: image7, animation: 'fade-right', delay: '400', link: 'https://www.behance.net/gallery/222712327/Design-and-Deveopment-of-an-HR-website' }
   ];
   </script>
