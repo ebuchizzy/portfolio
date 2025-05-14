@@ -16,7 +16,7 @@
           </p>
 
           <p class="mb-6 sm:mb-8 text-sm sm:text-base" data-aos="flip-down" data-aos-delay="300">
-            On the development side, I build dynamic and scalable web applications using HTML, CSS, JavaScript, Python, SQL, and PHP, leveraging frameworks like Vue.js, Nuxt.js, and Tailwind CSS for modern front-end solutions. My backend expertise includes Node.js, MongoDB, and SQL, enabling me to create seamless, high-performance applications. From concept to deployment, I provide full-stack solutions that merge creativity with functionality to bring ideas to life.
+            On the development side, I build dynamic and scalable web applications using HTML, CSS, JavaScript, Python, SQL, and PHP, leveraging frameworks like Vue.js, Nuxt.js, and Tailwind CSS for modern front-end solutions. My backend expertise includes Node.js, Express.js, MongoDB, Django, and SQL, enabling me to create seamless, high-performance applications. From concept to deployment, I provide full-stack solutions that merge creativity with functionality to bring ideas to life.
           </p>
 
           <div class="flex justify-center lg:justify-start">
