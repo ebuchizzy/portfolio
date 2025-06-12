@@ -16,7 +16,7 @@
           </p>
 
           <p class="mb-6 sm:mb-8 text-sm sm:text-base" data-aos="flip-down" data-aos-delay="300">
-            On the development side, I build dynamic and scalable web applications using HTML, CSS, JavaScript, Python, SQL, and PHP, leveraging frameworks like Vue.js, Nuxt.js, and Tailwind CSS for modern front-end solutions. My backend expertise includes Node.js, Express.js, Laravel, Django, MongoDB, and mySQL, enabling me to create seamless, high-performance applications. From concept to deployment, I provide full-stack solutions that merge creativity with functionality to bring ideas to life.
+            On the development side, I build dynamic and scalable web applications using HTML, CSS, JavaScript, Python, REST APIs and Git, leveraging frameworks like Vue.js, Nuxt.js, and Tailwind CSS for modern front-end solutions. My backend expertise includes Node.js, Express.js, Django, MongoDB, and mySQL, enabling me to create seamless, high-performance applications. From concept to deployment, I provide full-stack solutions that merge creativity with functionality to bring ideas to life.
           </p>
 
           <div class="flex justify-center lg:justify-start">
@@ -50,7 +50,9 @@
     { name: 'CSS', percentage: 90, color: '#0c73b8' },
     { name: 'Javascript', percentage: 80, color: '#e3a324' },
     { name: 'Python', percentage: 85, color: '#e45126' },
-    { name: 'PHP', percentage: 65, color: '#0c73b8' },
-    { name: 'SQL', percentage: 70, color: '#e3a324' }
+    { name: 'Vue.js', percentage: 85, color: '#0c73b8' },
+    { name: 'Tailwind CSS', percentage: 90, color: '#e3a324' },
+    { name: 'Express.js', percentage: 65, color: '#e45126' },
+    { name: 'Django', percentage: 70, color: '#0c73b8' },
   ];
   </script>

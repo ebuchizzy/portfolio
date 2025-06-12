@@ -47,7 +47,7 @@
     },
     {
       title: 'Web Development',
-      description: 'I build dynamic and scalable web applications using HTML, CSS, JavaScript, Vue.js, Nuxt.js, Tailwind CSS for Front-end, Node.js, Express.js, PHP, Python, Laravel, Django for Back-end and mySQL, MongoDB for Database',
+      description: 'I build dynamic and scalable web applications using HTML, CSS, JavaScript, Vue.js, Nuxt.js, Tailwind CSS for Front-end, Node.js, Express.js, Python, Django for Back-end and mySQL, MongoDB for Database',
       icon: 'fas fa-file-code',
       animation: 'fade-left'
     }

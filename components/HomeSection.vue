@@ -48,7 +48,6 @@ let typingTimer = null;
 
 const animatedTexts = [
   'Web Developer',
-  'App Developer',
   'Product Designer',
   'Graphic Designer',
   'Digital Marketer',

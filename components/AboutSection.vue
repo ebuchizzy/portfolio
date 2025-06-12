@@ -18,10 +18,10 @@
         <div class="w-full lg:w-1/2 px-2 sm:px-0" data-aos="fade-left" data-aos-delay="200">
           <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-center lg:text-left">Hey There! I am Chukwuebuka Akpuofoba</h2>
           <p class="mb-4 sm:mb-6 text-sm sm:text-base" data-aos="flip-up" data-aos-delay="400">
-            Results-driven Web/App Developer, Product/Graphic Designer, and Digital Marketer with 3 years of experience in creating high-performing digital solutions and driving business growth.
+            Results-driven Web Developer, Product/Graphic Designer, and Digital Marketer with 3 years of experience in creating high-performing digital solutions and driving business growth.
           </p>
           <p class="mb-6 sm:mb-8 text-sm sm:text-base" data-aos="flip-up" data-aos-delay="400">
-            Skilled in designing user-friendly websites, developing robust web and mobile applications, and implementing effective marketing strategies. Passionate about leveraging technology and market insights to enhance brand visibility and boost revenue. Seeking opportunities to contribute my expertise in development, design, and marketing to a dynamic organization.       
+            Skilled in designing user-friendly websites, developing robust web applications, and implementing effective marketing strategies. Passionate about leveraging technology and market insights to enhance brand visibility and boost revenue. Seeking opportunities to contribute my expertise in development, design, and marketing to a dynamic organization.       
           </p>
           <div class="flex justify-center lg:justify-start">
             <NuxtLink to="#" 
