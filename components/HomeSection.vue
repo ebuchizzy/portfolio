@@ -48,9 +48,8 @@ let typingTimer = null;
 
 const animatedTexts = [
   'Web Developer',
-  'Product Designer',
+  'UI/UX Designer',
   'Graphic Designer',
-  'Digital Marketer',
 ];
 
 const socialIcons = [
