@@ -12,7 +12,7 @@
         <div class="w-full lg:w-5/12 mb-8 sm:mb-10 lg:mb-0">
           <h2 class="text-xl sm:text-3xl font-bold mb-4 sm:mb-6 text-center lg:text-left" data-aos="fade-right" data-aos-delay="200">My Skills and Experiences</h2>
           <p class="mb-6 sm:mb-8 text-sm sm:text-base" data-aos="flip-down" data-aos-delay="300">
-            I specialize in crafting visually appealing and highly functional digital experiences. As a web designer, I use Canva, Figma, Framer, and Spline to create sleek, user-friendly interfaces that enhance engagement and usability. My graphic design expertise, powered by Adobe Creative Suite, allows me to develop compelling visuals that strengthen brand identity and communication. Whether it's web design or branding, I ensure every project is both aesthetically striking and strategically effective.
+            I specialize in crafting visually appealing and highly functional digital experiences. As a UI/UX designer, I use Canva, Figma, Framer, and Spline to create sleek, user-friendly interfaces that enhance engagement and usability. My graphic design expertise, powered by Adobe Creative Suite, allows me to develop compelling visuals that strengthen brand identity and communication. Whether it's design or branding, I ensure every project is both aesthetically striking and strategically effective.
           </p>
 
           <p class="mb-6 sm:mb-8 text-sm sm:text-base" data-aos="flip-down" data-aos-delay="300">
