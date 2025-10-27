@@ -82,6 +82,7 @@ const contactInfo = [
     title: 'Portfolio',
     details: [
       'https://www.behance.net/ebukaakpuofoba',
+      'https://www.linkedin.com/in/chukwuebuka-akpuofoba-675b77369',
       'https://github.com/ebuchizzy?tab=repositories'
     ],
     icon: 'fas fa-globe',
