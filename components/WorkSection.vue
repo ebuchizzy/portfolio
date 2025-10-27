@@ -27,19 +27,29 @@
   import image1 from '@/assets/Image/Desktop - 1.png'
   import image2 from '@/assets/Image/Desktop - 2.png'
   import image3 from '@/assets/Image/Desktop - 11.png'
-  import image4 from '@/assets/Image/Desktop - 14.png'
+  import image4 from '@/assets/Image/Frame 4.png'
   import image5 from '@/assets/Image/SupportUsPage.png'
   import image6 from '@/assets/Image/Desktop - 111.png'
   import image7 from "@/assets/Image/Desk - saint.png"
+  import image8 from "@/assets/Image/MacBook Air - 1.png"
+  import image9 from "@/assets/Image/Flux.png"
+  import image10 from "@/assets/Image/Nex.png"
+  import image11 from "@/assets/Image/Vert.png"
+  import image12 from "@/assets/Image/Cryenix.png"
 
 
   const works = [
     { image: image1, animation: 'fade-right', delay: '200', link: 'https://www.behance.net/gallery/220607569/JSPARKS-branding' },
     { image: image2, animation: 'fade-up', delay: '200', link: 'https://www.behance.net/gallery/220607569/JSPARKS-branding' },
     { image: image3, animation: 'fade-left', delay: '200', link: 'https://www.behance.net/gallery/217027223/Lanraj-Product-Design' },
-    { image: image4, animation: 'fade-right', delay: '400', link: 'https://www.behance.net/gallery/217018213/Car-Flyer-Design-with-Figma' },
+    { image: image4, animation: 'fade-right', delay: '400', link: 'https://www.behance.net/gallery/236087981/Petrofa' },
     { image: image5, animation: 'fade-up', delay: '400', link: 'https://www.behance.net/gallery/221056145/SupportPage-Design-and-Dev' },
     { image: image6, animation: 'fade-left', delay: '400', link: 'https://www.behance.net/gallery/217018213/Car-Flyer-Design-with-Figma' },
-    { image: image7, animation: 'fade-right', delay: '400', link: 'https://www.behance.net/gallery/222712327/Design-and-Deveopment-of-an-HR-website' }
+    { image: image7, animation: 'fade-right', delay: '400', link: 'https://www.behance.net/gallery/222712327/Design-and-Deveopment-of-an-HR-website' },
+    { image: image8, animation: 'fade-up', delay: '200', link: 'https://www.behance.net/gallery/228935409/Jumaphad-2' },
+    { image: image9, animation: 'fade-up', delay: '400', link: 'https://www.behance.net/gallery/235036049/FluxenX-Landing-page' },
+    { image: image10, animation: 'fade-left', delay: '400', link: 'https://www.behance.net/gallery/234986329/Nexora-ai-3d-design' },
+    { image: image11, animation: 'fade-right', delay: '400', link: 'https://www.behance.net/gallery/234988367/Virtara-3d-design' },
+    { image: image12, animation: 'fade-up', delay: '200', link: 'https://www.behance.net/gallery/235035961/Cryenix-Landing-page' }
   ];
   </script>

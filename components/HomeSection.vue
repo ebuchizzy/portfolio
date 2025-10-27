@@ -10,7 +10,7 @@
         </span>
       </h2>
       
-      <div class="relative h-24 sm:h-28 md:h-36 overflow-hidden mt-4" data-aos="fade-left" data-aos-delay="900">
+      <div class="mt-8 relative h-24 sm:h-28 md:h-36 overflow-hidden mt-4" data-aos="fade-left" data-aos-delay="900">
         <transition-group name="slide-fade" class="animated-text">
           <h3 :key="currentText"
               class="text-3xl sm:text-4xl md:text-4xl lg:text-6xl font-bold text-primary absolute left-1/2 transform -translate-x-1/2">
@@ -20,12 +20,12 @@
       </div>
       
       <NuxtLink to="#work" 
-         class="inline-block mt-8 sm:mt-10 px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white uppercase text-base sm:text-lg font-semibold tracking-wider rounded-2xl transition-colors duration-500 hover:bg-blue-600" 
+         class="inline-block mt-8 sm:mt-10 px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white uppercase text-base sm:text-lg font-semibold tracking-wider rounded transition-colors duration-500 hover:bg-blue-600" 
          data-aos="zoom-out" data-aos-delay="1000">
         See My Works
       </NuxtLink>
       
-      <div class="mt-10 sm:mt-14 flex justify-center" data-aos="fade-in" data-aos-delay="1200">
+      <div class="mt-10 pl-6 sm:mt-14 flex justify-center" data-aos="fade-in" data-aos-delay="1200">
         <a v-for="(icon, index) in socialIcons" :key="index" 
            :href="icon.link" 
            class="text-white text-2xl sm:text-3xl mr-6 sm:mr-8 hover:text-primary transition-colors duration-300"
@@ -54,6 +54,7 @@ const animatedTexts = [
 
 const socialIcons = [
   { class: 'fab fa-behance', link: 'https://www.behance.net/ebukaakpuofoba'},
+  { class: 'fab fa-linkedin', link: 'https://www.linkedin.com/in/chukwuebuka-akpuofoba-675b77369'},
   { class: 'fab fa-github', link: 'https://github.com/ebuchizzy?tab=repositories' }
 ];
 
