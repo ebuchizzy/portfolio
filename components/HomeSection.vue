@@ -10,7 +10,7 @@
         </span>
       </h2>
       
-      <div class="mt-8 relative h-24 sm:h-28 md:h-36 overflow-hidden mt-4" data-aos="fade-left" data-aos-delay="900">
+      <div class="mt-8 relative h-24 sm:h-28 md:h-36 overflow-hidden" data-aos="fade-left" data-aos-delay="900">
         <transition-group name="slide-fade" class="animated-text">
           <h3 :key="currentText"
               class="text-3xl sm:text-4xl md:text-4xl lg:text-6xl font-bold text-primary absolute left-1/2 transform -translate-x-1/2">
