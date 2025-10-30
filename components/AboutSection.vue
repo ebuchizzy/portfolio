@@ -11,7 +11,7 @@
       <div class="flex flex-col lg:flex-row justify-between items-center">
         <div class="w-full lg:w-5/12 mb-8 sm:mb-10 lg:mb-0" data-aos="fade-right" data-aos-delay="200">
           <div class="relative w-full min-h-[300px] sm:min-h-[450px] rounded-lg overflow-hidden bg-gray-200">
-            <img src="/assets/Image/Picsart_25-03-06_09-11-24-539.png" alt="About Image" class="w-full h-full object-cover">
+            <img src="/assets/Image/Myimg.png" alt="About Image" class="w-full h-full object-cover">
           </div>
         </div>
         
