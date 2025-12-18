@@ -53,6 +53,7 @@
     { name: 'Vue.js', percentage: 85, color: '#0c73b8' },
     { name: 'Tailwind CSS', percentage: 90, color: '#e3a324' },
     { name: 'Express.js', percentage: 65, color: '#e45126' },
-    { name: 'Django', percentage: 70, color: '#0c73b8' },
+    { name: 'Node.js', percentage: 70, color: '#0c73b8' },
+    { name: 'Django', percentage: 65, color: '#e3a324' },
   ];
   </script>
