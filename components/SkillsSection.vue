@@ -20,11 +20,11 @@
           </p>
 
           <div class="flex justify-center lg:justify-start">
-            <NuxtLink to="#" 
+            <!-- <NuxtLink to="#" 
               class="inline-block px-4 sm:px-6 py-2 sm:py-3 bg-primary text-white uppercase text-sm sm:text-base font-semibold tracking-wider rounded transition-colors duration-500 hover:bg-blue-600"
               data-aos="zoom-in-right" data-aos-delay="400">
               See More
-            </NuxtLink>
+            </NuxtLink> -->
           </div>
         </div>
         

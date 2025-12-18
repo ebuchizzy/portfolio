@@ -24,11 +24,11 @@
            Skilled in designing user-friendly websites, creating visually compelling graphics, and developing responsive web applications. Passionate about crafting seamless digital experiences that align with brand identity and user needs. Seeking opportunities to contribute my expertise in web development, UI/UX design, and graphic design to a forward-thinking organization.
           </p>
           <div class="flex justify-center lg:justify-start">
-            <NuxtLink to="#" 
+            <!-- <NuxtLink to="#" 
               class="inline-block px-4 sm:px-6 py-2 sm:py-3 bg-primary text-white uppercase text-sm sm:text-base font-semibold tracking-wider rounded transition-colors duration-500 hover:bg-blue-600"
               data-aos="zoom-out-left" data-aos-delay="600">
               See More
-            </NuxtLink>
+            </NuxtLink> -->
           </div>
         </div>
       </div>
