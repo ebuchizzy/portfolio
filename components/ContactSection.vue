@@ -30,29 +30,53 @@
       </div>
       
       <div class="flex justify-center" data-aos="fade-up" data-aos-delay="400">
-        <form class="w-full max-w-2xl bg-white rounded-lg shadow-lg p-4 sm:p-6 md:p-10">
-          <h3 class="text-xl sm:text-2xl font-semibold text-center mb-6 sm:mb-8">Send Message</h3>
-          
-          <div class="mb-4 sm:mb-6">
-            <input type="text" placeholder="Name"
-                   class="w-full p-2 sm:p-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-primary text-sm sm:text-base">
-          </div>
-          
-          <div class="mb-4 sm:mb-6">
-            <input type="email" placeholder="Email"
-                   class="w-full p-2 sm:p-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-primary text-sm sm:text-base">
-          </div>
-          
-          <div class="mb-4 sm:mb-6">
-            <textarea rows="6" placeholder="Message"
-                      class="w-full p-2 sm:p-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-primary text-sm sm:text-base"></textarea>
-          </div>
-          
-          <button type="submit"
-                  class="w-full py-2 sm:py-3 bg-primary text-white font-medium uppercase tracking-wider rounded-md transition-colors duration-300 hover:bg-blue-600 text-sm sm:text-base">
-            Send
-          </button>
-        </form>
+        <form
+  action="https://formspree.io/f/xojaarkw"
+  method="POST"
+  class="w-full max-w-2xl bg-white rounded-lg shadow-lg p-4 sm:p-6 md:p-10"
+>
+  <h3 class="text-xl sm:text-2xl font-semibold text-center mb-6 sm:mb-8">
+    Send Message
+  </h3>
+
+  <div class="mb-4 sm:mb-6">
+    <input
+      type="text"
+      name="name"
+      placeholder="Name"
+      required
+      class="w-full p-2 sm:p-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-primary text-sm sm:text-base"
+    >
+  </div>
+
+  <div class="mb-4 sm:mb-6">
+    <input
+      type="email"
+      name="email"
+      placeholder="Email"
+      required
+      class="w-full p-2 sm:p-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-primary text-sm sm:text-base"
+    >
+  </div>
+
+  <div class="mb-4 sm:mb-6">
+    <textarea
+      name="message"
+      rows="6"
+      placeholder="Message"
+      required
+      class="w-full p-2 sm:p-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-primary text-sm sm:text-base"
+    ></textarea>
+  </div>
+
+  <button
+    type="submit"
+    class="w-full py-2 sm:py-3 bg-primary text-white font-medium uppercase tracking-wider rounded-md transition-colors duration-300 hover:bg-blue-600 text-sm sm:text-base"
+  >
+    Send
+  </button>
+</form>
+
       </div>
     </div>
   </section>
