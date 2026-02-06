@@ -34,7 +34,7 @@
   <script setup>
   const services = [
     {
-      title: 'UI/UX Design',
+      title: 'Web Design',
       description: 'I craft visually appealing and user-friendly designs using Canva, Figma, Framer, and Spline, ensuring a seamless and engaging user experience.',
       icon: 'fas fa-palette',
       animation: 'fade-right'
