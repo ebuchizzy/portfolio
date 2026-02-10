@@ -18,7 +18,7 @@
         <div class="w-full lg:w-1/2 px-2 sm:px-0" data-aos="fade-left" data-aos-delay="200">
           <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-center lg:text-left">Hey There! I am Chukwuebuka Akpuofoba</h2>
           <p class="mb-4 sm:mb-6 text-sm sm:text-base" data-aos="flip-up" data-aos-delay="400">
-            Results-driven Web Developer, Web Designer and Graphic Designer with 3 years of experience in creating high-performing digital solutions and driving business growth.
+            Results-driven Web Developer & Designer with 3 years of experience in creating high-performing digital solutions and driving business growth.
           </p>
           <p class="mb-6 sm:mb-8 text-sm sm:text-base" data-aos="flip-up" data-aos-delay="400">
            Skilled in designing user-friendly websites, creating visually compelling graphics, and developing responsive web applications. Passionate about crafting seamless digital experiences that align with brand identity and user needs. Seeking opportunities to contribute my expertise in web development, web design, and graphic design to a forward-thinking organization.
