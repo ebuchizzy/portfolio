@@ -57,3 +57,4 @@
     { name: 'Django', percentage: 65, color: '#e3a324' },
   ];
   </script>
+
