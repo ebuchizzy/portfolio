@@ -30,18 +30,19 @@
     ? 'fixed top-0 right-0 w-64 h-screen bg-white flex flex-col justify-center items-center shadow-lg z-50 overflow-y-auto' 
     : 'hidden lg:flex lg:items-center lg:relative'
     ]">
-      
+   
       
       <a v-for="(link, index) in navLinks" :key="index"
-         :href="link.to"
-         @click="handleLinkClick"
-         :class="[
-           'font-medium mx-2 sm:mx-3 text-sm sm:text-base transition-colors duration-300',
-           isMenuOpen ? 'text-black my-2 sm:my-3 py-1.5 sm:py-2 px-4 sm:px-6 hover:bg-primary hover:text-white'
-           : `text-white ${isSticky ? 'hover:text-black' : 'hover:text-primary'}`,
-         ]">
-        {{ link.text }}
-      </a>
+   :href="link.to"
+   @click="handleLinkClick(link.to)"
+   :class="[
+     'font-medium mx-2 sm:mx-3 text-sm sm:text-base transition-colors duration-300',
+     isMenuOpen 
+       ? `my-2 sm:my-3 py-1.5 sm:py-2 px-4 sm:px-6 ${activeLink.value === link.to ? 'bg-primary text-white' : 'text-black hover:bg-primary hover:text-white'}`
+       : `text-white ${isSticky ? 'hover:text-black' : 'hover:text-primary'}`,
+   ]">
+  {{ link.text }}
+</a>
     </nav>
   </header>
 </template>
@@ -60,11 +61,6 @@ const navLinks = [
   { text: 'Work', to: '#work' },
   { text: 'Contact', to: '#contact' }
 ];
-
-const handleLinkClick = () => {
-  isMenuOpen.value = false;
-  document.body.classList.remove('overflow-hidden');
-};
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
@@ -97,5 +93,13 @@ const goHome = () => {
   } else {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+};
+
+const activeLink = ref('#main');
+
+const handleLinkClick = (linkTo) => {
+  activeLink.value = linkTo;
+  isMenuOpen.value = false;
+  document.body.classList.remove('overflow-hidden');
 };
 </script>
