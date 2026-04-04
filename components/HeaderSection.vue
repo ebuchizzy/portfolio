@@ -99,7 +99,9 @@ const activeLink = ref('#main');
 
 const handleLinkClick = (linkTo) => {
   activeLink.value = linkTo;
-  isMenuOpen.value = false;
-  document.body.classList.remove('overflow-hidden');
+  setTimeout(() => {
+    isMenuOpen.value = false;
+    document.body.classList.remove('overflow-hidden');
+  }, 300);
 };
 </script>
