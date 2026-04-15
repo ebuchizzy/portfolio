@@ -1,6 +1,11 @@
 <template>
-  <section id="main" class="relative flex items-center justify-center w-full h-screen bg-dark px-4 sm:px-6 md:px-12 lg:px-48 overflow-hidden">
-    
+  <section
+    id="main"
+    class="relative flex h-screen w-full items-center justify-center overflow-hidden bg-[#000716] px-4 sm:px-6 md:px-12 lg:px-48"
+  >
+    <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.1),transparent_22%),radial-gradient(circle_at_bottom_right,rgba(58,108,244,0.1),transparent_32%),linear-gradient(145deg,#000716_10%,#020c1b_50%,#061020_100%)]"></div>
+    <div class="pointer-events-none absolute inset-0 opacity-[0.05] [background-image:linear-gradient(rgba(255,255,255,0.28)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.28)_1px,transparent_1px)] [background-size:84px_84px]"></div>
+
     <div class="relative z-10 text-center max-w-4xl">
       <h2 class="text-white text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-medium" data-aos="fade-right" data-aos-delay="800">
         Hello, I'm <br>
@@ -15,17 +20,28 @@
       <div class="mt-8 relative h-24 sm:h-28 md:h-36 " data-aos="fade-left" data-aos-delay="900">
         <transition-group name="slide-fade" class="animated-text">
           <h3 :key="currentText"
-              class="text-3xl sm:text-4xl md:text-4xl lg:text-6xl font-bold text-primary absolute left-1/2 transform -translate-x-1/2">
+              class="absolute left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-white via-[#7dd3fc] to-[#3a6cf4] bg-clip-text text-3xl font-bold text-transparent sm:text-4xl md:text-4xl lg:text-6xl">
             {{ currentText }}
           </h3>
         </transition-group>
       </div>
       
-      <NuxtLink to="#work" 
-         class="inline-block mt-8 sm:mt-10 px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white uppercase text-base sm:text-lg font-semibold tracking-wider rounded transition-colors duration-500 hover:bg-blue-600" 
-         data-aos="zoom-out" data-aos-delay="1000">
-        See My Works
-      </NuxtLink>
+      <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:mt-10 sm:flex-row" data-aos="zoom-out" data-aos-delay="1000">
+        <NuxtLink
+          to="#work"
+          class="inline-block rounded px-6 py-3 text-base font-semibold uppercase tracking-wider text-white transition-colors duration-500 hover:bg-blue-600 sm:px-8 sm:py-4 sm:text-lg bg-primary"
+        >
+          See My Works
+        </NuxtLink>
+
+        <a
+          href="/My%20CV.pdf"
+          download="My CV.pdf"
+          class="inline-block rounded border border-white/20 bg-white/5 px-6 py-3 text-base font-semibold uppercase tracking-wider text-white transition-colors duration-500 hover:border-primary hover:bg-primary sm:px-8 sm:py-4 sm:text-lg"
+        >
+          Download CV
+        </a>
+      </div>
       
       <div class="mt-10 pl-6 sm:mt-14 flex justify-center" data-aos="fade-in" data-aos-delay="1200">
         <a v-for="(icon, index) in socialIcons" :key="index" 
