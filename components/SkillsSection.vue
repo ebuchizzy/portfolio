@@ -1,7 +1,7 @@
 <template>
   <section
     id="skills"
-    class="relative isolate overflow-hidden bg-[#000716] px-4 py-16 text-white sm:px-6 sm:py-24 md:px-12 lg:px-48"
+    class="relative isolate overflow-hidden bg-[#000716] px-4 py-24 text-white sm:px-6 sm:py-24 md:px-12 lg:px-48"
   >
     <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.08),transparent_22%),radial-gradient(circle_at_top_right,rgba(125,211,252,0.08),transparent_24%),linear-gradient(135deg,#000512_14%,#020a18_48%,#050d1a_100%)]"></div>
     <div class="pointer-events-none absolute inset-0 opacity-[0.04] [background-image:linear-gradient(rgba(255,255,255,0.26)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.26)_1px,transparent_1px)] [background-size:72px_72px]"></div>
@@ -24,11 +24,11 @@
           My Skills and Experiences
         </h2>
         <p class="mb-6 text-sm leading-7 text-white/75 sm:mb-8 sm:text-base" data-aos="flip-down" data-aos-delay="300">
-          I design and build polished digital products that feel modern, useful, and visually sharp. My workflow spans interface design, front-end development, and full-stack delivery, so I can shape ideas from concept through launch with consistency across the entire experience.
+         I specialize in crafting visually appealing and highly functional digital experiences. As a Web designer, I use Canva, Figma, Framer, and Spline to create sleek, user-friendly interfaces that enhance engagement and usability. My graphic design expertise, powered by Adobe Creative Suite, allows me to develop compelling visuals that strengthen brand identity and communication. Whether it's design or branding, I ensure every project is both aesthetically striking and strategically effective.
         </p>
 
         <p class="mb-6 text-sm leading-7 text-white/75 sm:mb-8 sm:text-base" data-aos="flip-down" data-aos-delay="350">
-          Instead of treating skills like percentages, I focus on the tools and systems I use to create fast, scalable, and expressive web experiences. These are some of the technologies I rely on most when building user-focused products.
+          On the development side, I build dynamic and scalable web applications using HTML, CSS, JavaScript, Python, REST APIs and Git, leveraging frameworks like Vue.js, Nuxt.js, and Tailwind CSS for modern front-end solutions. My backend expertise includes Node.js, Express.js, Django, MongoDB, and mySQL, enabling me to create seamless, high-performance applications. From concept to deployment, I provide full-stack solutions that merge creativity with functionality to bring ideas to life.
         </p>
       </div>
 

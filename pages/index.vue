@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="bg-[#edf1f5] text-slate-900">
       <HeaderSection />
       <HomeSection />
       <AboutSection />
