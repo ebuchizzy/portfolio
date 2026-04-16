@@ -29,7 +29,7 @@
       <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:mt-10 sm:flex-row" data-aos="zoom-out" data-aos-delay="1000">
         <NuxtLink
           to="#work"
-          class="inline-block rounded px-6 py-3 text-base font-semibold uppercase tracking-wider text-white transition-colors duration-500 hover:bg-blue-600 sm:px-8 sm:py-4 sm:text-lg bg-primary"
+          class="inline-block rounded-full px-6 py-3 text-base font-semibold uppercase tracking-wider text-white transition-colors duration-500 hover:bg-blue-600 sm:px-8 sm:py-4 sm:text-lg bg-primary"
         >
           See My Works
         </NuxtLink>
@@ -37,7 +37,7 @@
         <a
           href="/My%20CV.pdf"
           download="My CV.pdf"
-          class="inline-block rounded border border-white/20 bg-white/5 px-6 py-3 text-base font-semibold uppercase tracking-wider text-white transition-colors duration-500 hover:border-primary hover:bg-primary sm:px-8 sm:py-4 sm:text-lg"
+          class="inline-block rounded-full border border-white/20 bg-white/5 px-6 py-3 text-base font-semibold uppercase tracking-wider text-white transition-colors duration-500 hover:border-primary hover:bg-primary sm:px-8 sm:py-4 sm:text-lg"
         >
           Download CV
         </a>
