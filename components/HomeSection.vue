@@ -90,10 +90,10 @@ const startTypingAnimation = () => {
       clearInterval(typingTimer);
       typingComplete.value = true;
       
-      // Start the role text rotation after name typing is complete
+
       startTextRotation();
     }
-  }, 100); // Adjust speed of typing here (milliseconds)
+  }, 100); 
 };
 
 const startTextRotation = () => {
@@ -103,12 +103,12 @@ const startTextRotation = () => {
 };
 
 onMounted(() => {
-  // Start typing animation when component mounts
+  
   startTypingAnimation();
 });
 
 onUnmounted(() => {
-  // Clean up intervals when component unmounts
+
   if (typingTimer) clearInterval(typingTimer);
   if (textRotationInterval) clearInterval(textRotationInterval);
 });

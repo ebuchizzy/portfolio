@@ -1,12 +1,7 @@
 <template>
   <header class="fixed inset-x-0 top-0 z-50">
     <div class="px-4 pt-4 sm:px-6 md:px-10">
-      <div
-        :class="[
-          'mx-auto w-full max-w-6xl transition-all duration-300',
-          isSticky || isMenuOpen ? 'translate-y-0' : 'translate-y-1'
-        ]"
-      >
+      <div class="mx-auto w-full max-w-6xl transition-all duration-300">
         <div
           :class="[
             'relative overflow-hidden rounded-full border px-4 py-3 shadow-[0_18px_40px_rgba(0,0,0,0.22)] backdrop-blur-xl transition-all duration-300 sm:px-6 lg:px-8',
@@ -93,8 +88,9 @@
         >
           <div v-if="isMenuOpen" class="relative lg:hidden">
             <button
+              type="button"
               aria-label="Close navigation menu"
-              class="fixed inset-0 top-[88px] z-30 bg-black/35"
+              class="fixed inset-0 top-[88px] z-30 bg-transparent"
               @click="closeMenu"
             ></button>
 
@@ -129,6 +125,23 @@ const isSticky = ref(false);
 const isMenuOpen = ref(false);
 const activeLink = ref('#main');
 
+/**
+ * Lock background scroll while the mobile menu is open.
+ * Uses overflow only (no position:fixed on #__nuxt/body) so the current section
+ * stays painted behind the menu instead of a blank viewport.
+ */
+const setMenuScrollLock = (locked) => {
+  if (typeof document === 'undefined') return;
+  const { documentElement: html, body } = document;
+  if (locked) {
+    html.style.overflow = 'hidden';
+    body.style.overflow = 'hidden';
+  } else {
+    html.style.overflow = '';
+    body.style.overflow = '';
+  }
+};
+
 const navLinks = [
   { text: 'Home', to: '#main' },
   { text: 'About', to: '#about' },
@@ -143,18 +156,12 @@ const rightLinks = computed(() => navLinks.slice(3));
 
 const closeMenu = () => {
   isMenuOpen.value = false;
-  document.body.classList.remove('overflow-hidden');
+  setMenuScrollLock(false);
 };
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
-
-  if (isMenuOpen.value) {
-    document.body.classList.add('overflow-hidden');
-    return;
-  }
-
-  document.body.classList.remove('overflow-hidden');
+  setMenuScrollLock(isMenuOpen.value);
 };
 
 const handleScroll = () => {
@@ -193,6 +200,7 @@ onMounted(() => {
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll);
-  document.body.classList.remove('overflow-hidden');
+  isMenuOpen.value = false;
+  setMenuScrollLock(false);
 });
 </script>
