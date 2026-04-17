@@ -165,7 +165,7 @@ const works = [
     description:
       'HR Solutions presents recruiting and people-management services with engaging sections, strong visual storytelling, and clear calls to action for prospective clients.',
     tags: ['Web', 'Branding', 'Responsive'],
-    techStack: ['Framer', 'Modern CSS', 'Interaction Design', 'Performance Optimization'],
+    techStack: ['Framer', 'Modern CSS'],
     features: ['Service discovery flow', 'Content-first layout', 'Lead capture CTAs', 'Mobile-first behavior'],
     image: image7,
     link: 'https://hrsolutions.framer.website/',

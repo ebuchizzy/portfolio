@@ -18,11 +18,9 @@
         <div class="w-full lg:w-1/2 px-2 sm:px-0" data-aos="fade-left" data-aos-delay="200">
           <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-center lg:text-left">Hey There! I am Chukwuebuka Akpuofoba</h2>
           <p class="mb-4 sm:mb-6 text-sm sm:text-base" data-aos="flip-up" data-aos-delay="400">
-            Results-driven Web Developer & Designer with 3 years of experience in creating high-performing digital solutions and driving business growth.
+            I build websites that look good and actually work. If you've got an idea but no website, or a website that doesn't reflect how good your business actually is, that's where I come in. Over the past 3 years, I've helped startups and small businesses go from "we need a website" to a live, polished product they're proud of, covering everything from the design to the code to the launch.
           </p>
-          <p class="mb-6 sm:mb-8 text-sm sm:text-base" data-aos="flip-up" data-aos-delay="400">
-           Skilled in designing user-friendly websites, creating visually compelling graphics, and developing responsive web applications. Passionate about crafting seamless digital experiences that align with brand identity and user needs. Seeking opportunities to contribute my expertise in web development, web design, and graphic design to a forward-thinking organization.
-          </p>
+          
           <div class="flex justify-center lg:justify-start">
             <!-- <NuxtLink to="#" 
               class="inline-block px-4 sm:px-6 py-2 sm:py-3 bg-primary text-white uppercase text-sm sm:text-base font-semibold tracking-wider rounded transition-colors duration-500 hover:bg-blue-600"
