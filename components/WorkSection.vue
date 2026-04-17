@@ -62,68 +62,70 @@
       </article>
     </div>
 
-    <div
-      v-if="activeWork"
-      class="fixed inset-0 z-[9999] flex items-start justify-center overflow-y-auto bg-black/75 p-3 pt-24 sm:p-6 sm:pt-28"
-      @click.self="closeModal"
-    >
-      <div class="mb-8 w-full max-w-4xl rounded-2xl border border-[#29406b] bg-[#03122f] p-4 shadow-2xl shadow-black/50 sm:p-6">
-        <div class="mb-4 flex items-start justify-between gap-4">
-          <div>
-            <h3 class="text-3xl font-semibold text-white sm:text-4xl">{{ activeWork.title }}</h3>
-            <p class="text-[11px] uppercase tracking-[0.16em] text-slate-400">{{ activeWork.category }}</p>
-          </div>
-          <button
-            type="button"
-            class="flex h-10 w-10 items-center justify-center rounded-full border border-[#2d4774] bg-[#071a3d] text-2xl leading-none text-slate-200 shadow-lg shadow-black/40 transition-colors hover:border-primary hover:text-primary"
-            @click="closeModal"
-          >
-            ×
-          </button>
-        </div>
-
-        <div class="mb-6 overflow-hidden rounded-2xl border border-[#1f3057]">
-          <img :src="activeWork.image" :alt="activeWork.title" class="h-full w-full object-cover">
-        </div>
-
-        <p class="mb-6 text-base leading-relaxed text-slate-300 sm:text-lg">
-          {{ activeWork.description }}
-        </p>
-
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-          <div>
-            <h4 class="mb-3 text-2xl font-semibold text-white">Tech Stack</h4>
-            <ul class="space-y-2 text-slate-200">
-              <li v-for="tech in activeWork.techStack" :key="tech" class="flex items-center gap-2">
-                <span class="h-2 w-2 rounded-full bg-primary"></span>
-                <span class="text-base">{{ tech }}</span>
-              </li>
-            </ul>
+    <Teleport to="body">
+      <div
+        v-if="activeWork"
+        class="fixed inset-0 z-[9999] flex items-start justify-center overflow-y-auto bg-black/75 p-3 pt-24 sm:p-6 sm:pt-28"
+        @click.self="closeModal"
+      >
+        <div class="mb-8 w-full max-w-4xl rounded-2xl border border-[#29406b] bg-[#03122f] p-4 shadow-2xl shadow-black/50 sm:p-6">
+          <div class="mb-4 flex items-start justify-between gap-4">
+            <div>
+              <h3 class="text-3xl font-semibold text-white sm:text-4xl">{{ activeWork.title }}</h3>
+              <p class="text-[11px] uppercase tracking-[0.16em] text-slate-400">{{ activeWork.category }}</p>
+            </div>
+            <button
+              type="button"
+              class="flex h-10 w-10 items-center justify-center rounded-full border border-[#2d4774] bg-[#071a3d] text-2xl leading-none text-slate-200 shadow-lg shadow-black/40 transition-colors hover:border-primary hover:text-primary"
+              @click="closeModal"
+            >
+              ×
+            </button>
           </div>
 
-          <div>
-            <h4 class="mb-3 text-2xl font-semibold text-white">Key Features</h4>
-            <ul class="space-y-2 text-slate-200">
-              <li v-for="feature in activeWork.features" :key="feature" class="flex items-center gap-2">
-                <span class="h-2 w-2 rounded-full bg-primary"></span>
-                <span class="text-base">{{ feature }}</span>
-              </li>
-            </ul>
+          <div class="mb-6 overflow-hidden rounded-2xl border border-[#1f3057]">
+            <img :src="activeWork.image" :alt="activeWork.title" class="h-full w-full object-cover">
           </div>
-        </div>
 
-        <div class="mt-8">
-          <a
-            :href="activeWork.link"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center rounded-full bg-primary px-8 py-3 text-base font-semibold text-[#021125] transition-opacity hover:opacity-85"
-          >
-            Visit Live Project
-          </a>
+          <p class="mb-6 text-base leading-relaxed text-slate-300 sm:text-lg">
+            {{ activeWork.description }}
+          </p>
+
+          <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+            <div>
+              <h4 class="mb-3 text-2xl font-semibold text-white">Tech Stack</h4>
+              <ul class="space-y-2 text-slate-200">
+                <li v-for="tech in activeWork.techStack" :key="tech" class="flex items-center gap-2">
+                  <span class="h-2 w-2 rounded-full bg-primary"></span>
+                  <span class="text-base">{{ tech }}</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="mb-3 text-2xl font-semibold text-white">Key Features</h4>
+              <ul class="space-y-2 text-slate-200">
+                <li v-for="feature in activeWork.features" :key="feature" class="flex items-center gap-2">
+                  <span class="h-2 w-2 rounded-full bg-primary"></span>
+                  <span class="text-base">{{ feature }}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <a
+              :href="activeWork.link"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center rounded-full bg-primary px-8 py-3 text-base font-semibold text-[#021125] transition-opacity hover:opacity-85"
+            >
+              Visit Live Project
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </Teleport>
   </section>
 </template>
 
