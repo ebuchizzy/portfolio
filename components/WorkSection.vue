@@ -118,9 +118,9 @@
               :href="activeWork.link"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center rounded-full bg-primary px-8 py-3 text-base font-semibold text-[#021125] transition-opacity hover:opacity-85"
+              class="inline-flex items-center rounded-full bg-primary px-8 py-3 text-base font-semibold text-white transition-opacity hover:opacity-85"
             >
-              Visit Live Project
+              Visit Project
             </a>
           </div>
         </div>
