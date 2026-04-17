@@ -51,7 +51,7 @@
     { image: image2, animation: 'fade-up', delay: '200', link: 'https://www.behance.net/gallery/220607569/JSPARKS-branding' },
     { image: image3, animation: 'fade-left', delay: '200', link: 'https://www.behance.net/gallery/217027223/Lanraj-Product-Design' },
     { image: image4, animation: 'fade-right', delay: '400', link: 'https://www.behance.net/gallery/236087981/Petrofa' },
-    { image: image6, animation: 'fade-left', delay: '400', link: 'https://www.behance.net/gallery/217018213/Car-Flyer-Design-with-Figma' },
+    { image: image6, animation: 'fade-left', delay: '400', link: 'https://www.behance.net/gallery/230989255/Metro-Electric-Flyer-1' },
     { image: image8, animation: 'fade-up', delay: '200', link: 'https://www.behance.net/gallery/228935409/Jumaphad-2' },
     { image: image9, animation: 'fade-up', delay: '400', link: 'https://www.behance.net/gallery/235036049/FluxenX-Landing-page' },
     { image: image10, animation: 'fade-left', delay: '400', link: 'https://www.behance.net/gallery/234986329/Nexora-ai-3d-design' },
